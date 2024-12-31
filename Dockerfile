@@ -1,16 +1,20 @@
-# Usar a imagem do Node.js
+# Use uma imagem Node.js como base
 FROM node:20
 
-# Definir o diretório de trabalho
+# Defina o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copiar o restante dos arquivos do projeto
+# Copie o arquivo package.json e package-lock.json para o container
+COPY package*.json ./
+
+# Instale as dependências
+RUN npm install
+
+# Copie todos os arquivos do projeto para o container
 COPY . .
 
-# Instalar as dependências com Yarn
-RUN yarn install
-# Expor a porta que o React vai usar
+# Exponha a porta padrão do CRA
 EXPOSE 3000
 
-# Comando para rodar o app
-CMD ["yarn", "start"]
+# Comando para iniciar o servidor de desenvolvimento do CRA
+CMD ["npm", "start"]
