@@ -1,15 +1,20 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', 
   content: [
-    './src/**/*.{js,jsx,ts,tsx,css}',
+    "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
       colors: {
-        'dark-black': '#0a0a0a',
-        'darker-black': '#000000',
-      },
+        purpleTheme: {
+          light: '#ffffff',
+          default: '#242424',
+          dark: '#242424',
+        }
+      }
+
     },
   },
   plugins: [],
-};
+}
