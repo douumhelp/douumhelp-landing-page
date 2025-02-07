@@ -1,0 +1,6 @@
+.image-container img {
+    width: 485px;
+    height: 485px;
+    object-fit: contain;  /* Ajusta a imagem mantendo as proporções */
+  }
+  
