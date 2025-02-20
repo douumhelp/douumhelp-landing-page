@@ -3,7 +3,7 @@ import './Principal.css';
 
 const Principal = () => {
   return (
-    <div className="bg-default text-white flex flex-row justify-between items-center p-8 h-[50vh]">
+    <div className="bg-default text-white flex flex-row justify-between items-center p-8 h-[60vh]">
       <div className="max-w-lg ml-16">
         <h1 className="text-[#FFE600] text-4xl font-bold leading-tight">
           Encontre ou ofereça ajuda para tarefas do dia a dia!
