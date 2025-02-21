@@ -1,7 +1,7 @@
 import React from "react";
-import './Principal.css';
+import './Main.css';
 
-const Principal = () => {
+const Main = () => {
   return (
     <div className="bg-default text-white flex flex-row justify-between items-center p-8 h-[50vh]">
       <div className="max-w-lg ml-16">
@@ -28,4 +28,4 @@ const Principal = () => {
   );
 };
 
-export default Principal;
+export default Main;
